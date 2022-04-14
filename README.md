@@ -74,6 +74,21 @@ let strings = new LocalizedStrings({
 ```
 
 ## Pseudocode: 
+[x] Copy [boilerplate](https://github.com/ac524/work-timeline/tree/boilerplate)
+[x] npm install MUI in directory (directions below)
+[ ] add components to html
+    1. navbar
+    2. profile bar
+    3. journal (container)
+    4. journal (posts + comments)
+    5. login
+    6. sign up
+    7. 
+[ ] 
+
+---
+### notes:
+#### features 
 USER'S FIRST TIME ON PAGE:
 * read about lingr
 * sign up:
@@ -114,26 +129,10 @@ how can people add/search for other users? by username, email?
     * navigate to friends list from profile
     * follow button on profile of every user (except your own profile)
 
----
-### paso a paso:
-[x] Copy [boilerplate](https://github.com/ac524/work-timeline/tree/boilerplate)
-[x] npm install MUI in directory (directions below)
-[ ] add components to site
-    1. navbar
-    2. profile bar
-    3. journal (container)
-    4. journal (posts + comments)
-    5. login
-    6. sign up
-    7. 
-
-
----
-### notes:
 #### MUI
 [Install MUI](https://mui.com/material-ui/getting-started/installation/) 
 * **DEVS ARE RESPONSIBLE FOR LOADING ANY FONTS USED IN APP - NO FONT IS AUTOMATICALLY LOADED BY MUI**
-* Install with npm:
+* Install roboto font with npm:
     1. `npm install @fontsource/roboto`
     2. import it in your entry-point
         ```js
@@ -142,7 +141,7 @@ how can people add/search for other users? by username, email?
         import '@fontsource/roboto/500.css';
         import '@fontsource/roboto/700.css';
         ```
-    3. [Fontsource](https://github.com/fontsource/fontsource) can be used to load sp. subsets, weights, and styles. Note: MUI default typography configuration only relies on 300, 400, 500, and 700 font weights.
+* [Fontsource](https://github.com/fontsource/fontsource) can be used to load sp. subsets, weights, and styles. Note: MUI default typography configuration only relies on 300, 400, 500, and 700 font weights.
 
 * possible components 
     1. [snackbar](https://mui.com/material-ui/react-snackbar/)
