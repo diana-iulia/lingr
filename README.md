@@ -17,11 +17,11 @@ let strings = new LocalizedStrings({
        contact: "Contact",
        donations: "Donate",
        profile: "Profile"
-   }
+   },
    profile: {
        aboutMe: "About Me:",
        journal: "Journal"
-   }
+   },
    credentials: {
        username: "Username",
        password: "Password",
@@ -30,7 +30,7 @@ let strings = new LocalizedStrings({
        signup: "Sign Up",
        submit: "Submit",
        forgotPassword: "Forgot Password?"
-   }
+   },
    posts: {
        title: 
    }
