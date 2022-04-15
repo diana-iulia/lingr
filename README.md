@@ -164,8 +164,4 @@ how can people add/search for other users? by username, email?
 ## DREAMS (POST MVP): 
 * follow vs friend requests (buddies vs best buddies)
 * edit post and comment contents
-=======
-DREAMS: 
-* friend requests (best buddies)
-* edit post and comment contents
 
