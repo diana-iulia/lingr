@@ -52,11 +52,11 @@ let strings = new LocalizedStrings({
        contact: "Contattare",
        donations: "Donare",
        profile: "Profilo"
-   }
+   },
    profile: {
        aboutMe: "Su di me:",
        journal: "Il Diario"
-   }
+   },
    credentials: {
        username: "Nome utente",
        password: "Parola d'ordine",
@@ -65,7 +65,7 @@ let strings = new LocalizedStrings({
        signup: "Iscriversi",
        submit: "Inviare il modulo",
        forgotPassword: "Ha dimenticato la parola d'ordine?"
-   }
+   },
    posts: {
        title: 
    }
@@ -75,7 +75,9 @@ let strings = new LocalizedStrings({
 
 ## Pseudocode: 
 [x] Copy [boilerplate](https://github.com/ac524/work-timeline/tree/boilerplate)
+
 [x] npm install MUI in directory (directions below)
+
 [ ] add components to html
     1. navbar
     2. profile bar
@@ -84,6 +86,7 @@ let strings = new LocalizedStrings({
     5. login
     6. sign up
     7. 
+    
 [ ] 
 
 ---
