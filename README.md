@@ -27,11 +27,11 @@ let strings = new LocalizedStrings({
        contact: "Contact",
        donations: "Donate",
        profile: "Profile"
-   }
+   },
    profile: {
        aboutMe: "About me:",
        journal: "Journal"
-   }
+   },
    credentials: {
        username: "Username",
        password: "Password",
@@ -40,7 +40,7 @@ let strings = new LocalizedStrings({
        signup: "Sign Up",
        submit: "Submit",
        forgotPassword: "Forgot Password?"
-   }
+   },
    posts: {
        title: 
    }
@@ -156,7 +156,13 @@ how can people add/search for other users? by username, email?
 #### Emotion 
 [Emotion docs](https://emotion.sh/docs/introduction)
 
+
 ---
 ## DREAMS (POST MVP): 
 * follow vs friend requests (buddies vs best buddies)
 * edit post and comment contents
+=======
+DREAMS: 
+* friend requests (best buddies)
+* edit post and comment contents
+
