@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import { translations } from '../../lib/localizedStrings';
 import Auth from '../../utils/auth';
+
+translations.setLanguage('it');
 
 const Header = () => {
   const logout = (event) => {
@@ -24,13 +26,13 @@ const Header = () => {
                 {Auth.getProfile().data.username}'s profile
               </Link>
               <button className="btn btn-lg btn-light m-2" onClick={logout}>
-                Logout
+                
               </button>
             </>
           ) : (
             <>
               <Link className="btn btn-lg btn-info m-2" to="/login">
-                Login
+              {translations.navbar.docs}
               </Link>
               <Link className="btn btn-lg btn-light m-2" to="/signup">
                 Signup
