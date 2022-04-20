@@ -35,7 +35,7 @@ let strings = new LocalizedStrings({
 
           profile: "",
           aboutMe: "",
-          journal: ""
+          journal: "",
 
           username: "",
           password: "",
@@ -43,11 +43,11 @@ let strings = new LocalizedStrings({
           login: "",
           signup: "",
           submit: "",
-          forgotPassword: ""
+          forgotPassword: "",
 
           title: "",
           comment: "",
-          comments: ""
+          comments: "",
          }
     // TEMPLATE TO ADD ANOTHER LANGUAGE 👆🏽👆🏽👆🏽👆🏽👆🏽👆🏽👆🏽👆🏽👆🏽👆🏽👆🏽👆🏽👆🏽👆🏽👆🏽👆🏽👆🏽
 
