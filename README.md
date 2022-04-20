@@ -33,7 +33,7 @@ let strings = new LocalizedStrings({
           contact: "",
           donations: "",
 
-          profile: ""
+          profile: "",
           aboutMe: "",
           journal: ""
 
