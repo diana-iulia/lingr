@@ -12,30 +12,15 @@ import Tab from '@mui/material/Tab';
 
 import Tabs from '@mui/material/Tabs';
 
+import '../../styles/style.css'
 
 
 
 
 
 
-
-// function LinkTab(props) {
-//   return (
-//     <Tab
-//       component="a"
-//       onClick={(event) => {
-//         event.preventDefault();
-//       }}
-//       {...props}
-//     />
-//   );
-// }
-
-
-// import React from 'react';
-// import { Link } from 'react-router-dom';
 import { translations } from '../../lib/localizedStrings';
-// import Auth from '../../utils/auth';
+
 
 translations.setLanguage('it');
 
@@ -60,11 +45,13 @@ const Header = () => {
   };
 
 
+
+  
   return (
 
     
 
-    <header className="bg-primary text-light mb-4 py-3 flex-row align-center">
+    <header className="text-light mb-4 py-3 flex-row align-center">
       {/* <div className="container flex-row justify-space-between-lg justify-center align-center"> */}
 
     <h1>Lingr</h1>
@@ -79,15 +66,15 @@ const Header = () => {
               </Link> */}
 
               <button className="btn btn-lg btn-light m-2" onClick={logout}>
-                
+                Logout
               </button>
             </>
           ) : (
             <>
-              <Link className="btn btn-lg btn-info m-2" to="/login">
+              <Link className="login-btn btn btn-lg m-2" to="/login">
               {translations.navbar.docs}
               </Link>
-              <Link className="btn btn-lg btn-light m-2" to="/signup">
+              <Link className="signup-btn btn btn-lg m-2" to="/signup">
                 Signup
               </Link>
             </>
@@ -95,12 +82,12 @@ const Header = () => {
         </div>
 
     <Box sx={{ width: '100%' }}>
-      <Tabs value={value} onChange={handleChange} aria-label="nav tabs example">
-        <Tab component={Link} label="Home" to="/" />
+      <Tabs TabIndicatorProps={{style: {background:'#FFB703'}}} value={value} onChange={handleChange} aria-label="nav tabs example">
+        <Tab component={Link} label={<span style={{ color: '#FFB703' }}>Home</span>} to="/" />
         
         {/* <Tab component={Link} label={`${Auth.getProfile().data.username}'s Page`} to="/me" /> */}
-        <Tab component={Link} label="My Page" to="/me" />
-        <Tab component={Link} label="Make a Post" to="/login" />
+        <Tab component={Link} label={<span style={{ color: '#FFB703' }}>My Page</span>} to="/me" />
+        <Tab component={Link} label={<span style={{ color: '#FFB703' }}>Make a Post</span>} to="/login" />
         {/* <Tab component={Link} label="Login" to="/login" /> */}
       </Tabs>
     </Box>

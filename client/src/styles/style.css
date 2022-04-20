@@ -1,0 +1,37 @@
+body {
+    background-color: #4CC9F0;
+}
+
+header h1 {
+    font-size: 60px;
+    padding-left: 20px;
+    color: #FFB703;
+}
+
+header {
+    background-color: #4361EE;
+}
+
+.login-btn {
+    background-color: #7209B7;
+    color: #e6e6e6;
+    text-decoration: none;
+}
+
+.login-btn:hover {
+    background-color: #4c067a;
+    color: #e6e6e6;
+    text-decoration: none;
+}
+
+.signup-btn {
+    background-color: #3A0CA3;
+    color: #e6e6e6;
+    text-decoration: none;
+}
+
+.signup-btn:hover {
+    background-color: #2c097c;
+    color: #e6e6e6;
+    text-decoration: none;
+}
