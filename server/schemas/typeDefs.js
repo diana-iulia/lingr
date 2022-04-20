@@ -6,6 +6,22 @@ const typeDefs = gql`
     username: String
     email: String
     password: String
+    posts: [Post]
+  }
+
+  type Post {
+    _id: ID
+    postText: String
+    postAuthor: String
+    createdAt: String
+    comments: [Comment]!
+  }
+
+  type Comment {
+    _id: ID
+    commentText: String
+    commentAuthor: String
+    createdAt: String
   }
 
   type Auth {
@@ -20,8 +36,21 @@ const typeDefs = gql`
   }
 
   type Mutation {
-    addUser(username: String!, email: String!, password: String!): Auth
-    login(email: String!, password: String!): Auth
+    addUser(
+        username: String!, 
+        email: String!, 
+        password: String!)
+        : Auth
+    login(
+        email: String!, 
+        password: String!)
+        : Auth
+    addPost(
+        username: String!,
+        postText: String!,
+        # TODO: should it be postAuthor or username?
+        
+    )
   }
 `;
 
