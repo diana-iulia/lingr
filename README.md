@@ -12,6 +12,7 @@ made with <3 by [Diana](https://github.com/dianaiuliacalin/lingr), [Erica](https
 
 
 ## DEVELOPER INFORMATION
+[Coolors color scheme](https://coolors.co/ffb703-7209b7-3a0ca3-4361ee-4cc9f0)
 [React Localization](https://www.npmjs.com/package/react-localization)
 INITIAL APP LANGUAGES: en, es, de, fr, it, ro, ru, cn-tn, cn-s, pt-br
 
