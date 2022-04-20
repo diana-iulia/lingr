@@ -13,65 +13,45 @@ made with <3 by [Diana](https://github.com/dianaiuliacalin/lingr), [Erica](https
 
 ## DEVELOPER INFORMATION
 [Coolors color scheme](https://coolors.co/ffb703-7209b7-3a0ca3-4361ee-4cc9f0)
+<br>
 [React Localization](https://www.npmjs.com/package/react-localization)
-INITIAL APP LANGUAGES: en, es, de, fr, it, ro, ru, cn-tn, cn-s, pt-br
-
-ES6 module syntax:
+<br>
+CURRENT APP LANGUAGES: en-us, it, ro, es, de
+<br>
+WE STILL NEED HELP WITH THESE LANGUAGES: af, sq, am, ar, hy, be, bg, my... lots... 
+<br>
 
 ```js 
 import LocalizedStrings from 'react-localization';
 
 let strings = new LocalizedStrings({
- en:{
-   navbar: {
-       docs: "Documentation",
-       contact: "Contact",
-       donations: "Donate",
-       profile: "Profile"
-   },
-   profile: {
-       aboutMe: "About me:",
-       journal: "Journal"
-   },
-   credentials: {
-       username: "Username",
-       password: "Password",
-       languages: "Languages",
-       login: "Log In",
-       signup: "Sign Up",
-       submit: "Submit",
-       forgotPassword: "Forgot Password?"
-   },
-   posts: {
-       title: 
-   }
-   
- },
- it: {
-  navbar: {
-       docs: "Documentazione",
-       contact: "Contattare",
-       donations: "Donare",
-       profile: "Profilo"
-   },
-   profile: {
-       aboutMe: "Su di me:",
-       journal: "Il Diario"
-   },
-   credentials: {
-       username: "Nome utente",
-       password: "Parola d'ordine",
-       languages: "Lingue",
-       login: "Accesso",
-       signup: "Iscriversi",
-       submit: "Inviare il modulo",
-       forgotPassword: "Ha dimenticato la parola d'ordine?"
-   },
-   posts: {
-       title: 
-   }
- }
-});
+
+    // TEMPLATE TO ADD ANOTHER LANGUAGE 👇🏽👇🏽👇🏽👇🏽👇🏽👇🏽👇🏽👇🏽👇🏽👇🏽👇🏽👇🏽👇🏽👇🏽👇🏽👇🏽👇🏽
+        // just replace language code (here it's US english "en-us")
+         en-us:{
+          docs: "",
+          contact: "",
+          donations: "",
+
+          profile: ""
+          aboutMe: "",
+          journal: ""
+
+          username: "",
+          password: "",
+          languages: "",
+          login: "",
+          signup: "",
+          submit: "",
+          forgotPassword: ""
+
+          title: "",
+          comment: "",
+          comments: ""
+         }
+    // TEMPLATE TO ADD ANOTHER LANGUAGE 👆🏽👆🏽👆🏽👆🏽👆🏽👆🏽👆🏽👆🏽👆🏽👆🏽👆🏽👆🏽👆🏽👆🏽👆🏽👆🏽👆🏽
+
+);
 ```
 
 ## Pseudocode: 
