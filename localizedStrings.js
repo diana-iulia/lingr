@@ -77,26 +77,26 @@ export const translations = new LocalizedStrings({
     }, 
     es:{
         navbar: {
-            docs: 
-            contact: 
-            donations: 
-            profile: 
+            docs:"Documentación"
+            contact:"Contacto"
+            donations:"Donaciones"
+            profile:"Perfil" 
         },
         profile: {
-            aboutMe: 
-            journal: 
+            aboutMe:"Sobre Mí"
+            journal:"El Diario" 
         },
         credentials: {
-            username: 
-            password: 
-            languages: 
-            login: 
-            signup: 
-            submit: 
-            forgotPassword: 
+            username:"El Nombre de Usario" 
+            password:"La Contraseña" 
+            languages:"El Idioma" 
+            login:"El Login" 
+            signup:"Inscribirse" 
+            submit:"Presentar" 
+            forgotPassword:"Olvidar la Contraseña" 
         },
         posts: {
-            title: 
+            title:"Título" 
         }
     },
     ukr:{
@@ -124,7 +124,6 @@ export const translations = new LocalizedStrings({
             title: 
         }
     },
-    
      rum: {
         navbar: {
             docs: 
@@ -133,7 +132,7 @@ export const translations = new LocalizedStrings({
             profile: 
         },
                 
-            profile: {
+        profile: {
                 aboutMe: 
                 journal: 
          },
@@ -149,5 +148,30 @@ export const translations = new LocalizedStrings({
         },
         posts:{
             title:  
+    },
+    fr:{
+        navbar: {
+            docs: "",
+            contact: "",
+            donations: "",
+            profile: "Pr"
+    },
+        profile: {
+            aboutMe: "About me:",
+            journal: "Journal"
+        },
+        credentials: {
+            username: "Username",
+            password: "Password",
+            languages: "Languages",
+            login: "Log In",
+            signup: "Sign Up",
+            submit: "Submit",
+            forgotPassword: "Forgot Password?"
+        },
+        posts: {
+            title: 'title'
+
+       
         }
     });
