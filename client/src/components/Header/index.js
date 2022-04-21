@@ -3,17 +3,10 @@ import { Link } from "react-router-dom";
 // import { useState } from "react";
 
 import Auth from "../../utils/auth";
-
-// import { TabContext, Box, TabList, Tab, TabPanel, Tabs } from "@mui/base";
 import Box from '@mui/material/Box';
 import Tab from '@mui/material/Tab';
-
-// import TabPanel from '@mui/lab/TabPanel';
-
 import Tabs from '@mui/material/Tabs';
-
 import '../../styles/style.css'
-
 
 
 
@@ -25,11 +18,6 @@ import { translations } from '../../lib/localizedStrings';
 translations.setLanguage('it');
 
 const Header = () => {
-
-
-
-
-
 
 
   const logout = (event) => {
@@ -72,7 +60,7 @@ const Header = () => {
           ) : (
             <>
               <Link className="login-btn btn btn-lg m-2" to="/login">
-              {translations.navbar.docs}
+                {translations.navbar.docs}
               </Link>
               <Link className="signup-btn btn btn-lg m-2" to="/signup">
                 Signup
@@ -82,16 +70,18 @@ const Header = () => {
         </div>
 
     <Box sx={{ width: '100%' }}>
-      <Tabs TabIndicatorProps={{style: {background:'#FFB703'}}} value={value} onChange={handleChange} aria-label="nav tabs example">
-        <Tab component={Link} label={<span style={{ color: '#FFB703' }}>Home</span>} to="/" />
+      <Tabs variant="fullWidth" TabIndicatorProps={{style: {background:'#FFB703'}}} value={value} onChange={handleChange} aria-label="nav tabs example">
+        <Tab component={Link} label={<span style={{ fontSize: '20px', color: '#FFB703' }}>Home</span>} to="/" />
         
         {/* <Tab component={Link} label={`${Auth.getProfile().data.username}'s Page`} to="/me" /> */}
-        <Tab component={Link} label={<span style={{ color: '#FFB703' }}>My Page</span>} to="/me" />
-        <Tab component={Link} label={<span style={{ color: '#FFB703' }}>Make a Post</span>} to="/login" />
+        <Tab component={Link} label={<span style={{ fontSize: '20px', color: '#FFB703' }}>My Page</span>} to="/me" />
+        <Tab component={Link} label={<span style={{ fontSize: '20px', color: '#FFB703' }}>Make a Post</span>} to="/login" />
         {/* <Tab component={Link} label="Login" to="/login" /> */}
       </Tabs>
     </Box>
+    
 
+    
 
 
 
