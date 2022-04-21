@@ -41,7 +41,7 @@ const PostList = ({
             </div>
             <Link
               className="btn btn-primary btn-block btn-squared"
-              to={`/thoughts/${posts._id}`}
+              to={`/post/${posts._id}`}
             >
               Join the discussion on this thought.
             </Link>
