@@ -2,7 +2,7 @@
 // 
 import LocalizedStrings from 'react-localization';
 
-export const translations = new LocalizedStrings({
+export const translations = new LocalizedStrings({  }
     en:{
         navbar: {
             docs: "Documentation",
@@ -24,7 +24,9 @@ export const translations = new LocalizedStrings({
             forgotPassword: "Forgot Password?"
         },
         posts: {
-            title: 'title'
+            title: "Title",
+            comment: "Comment", 
+            comments: "Comments"
         }
     },
     it: {
@@ -49,129 +51,190 @@ export const translations = new LocalizedStrings({
         },
         posts: {
             title: "Titulo",
-        }  
+            comment: "Commento",
+            comments: "Commenti"
+        }
     },
     ru:{
         navbar: {
-            docs: 
-            contact: 
-            donations: 
-            profile:  
+            docs: "документы",
+            contact: "контакт",
+            donations: "пожертвовать",
+            profile: "профиль" 
         },
         profile: {
-            aboutMe: 
-            journal: 
+            aboutMe: "обо мне:",
+            journal: "журнал",
         },
         credentials: {
-            username: 
-            password: 
-            languages: 
-            login: 
-            signup: 
-            submit: 
-            forgotPassword: 
+            username: "имя пользователя",
+            password: "пароль",
+            languages: "языки",
+            login: "авторизоваться",
+            signup: "зарегистрироваться",
+            submit: "Отправить",
+            forgotPassword: "Забыли пароль?"
         },
         posts: {
-            title: 
+            title: "заглавие",
+            comment: "комментарий",
+            comments: "Комментарии",  
         }
     }, 
     es:{
         navbar: {
-            docs:"Documentación"
-            contact:"Contacto"
-            donations:"Donaciones"
-            profile:"Perfil" 
+            docs: "Documentación",
+            contact: "Contacto",
+            donations: "Donar",
+            profile: "Perfil" 
         },
         profile: {
-            aboutMe:"Sobre Mí"
-            journal:"El Diario" 
+            aboutMe: "Sobre Mí",
+            journal: "El Diario" 
         },
         credentials: {
-            username:"El Nombre de Usario" 
-            password:"La Contraseña" 
-            languages:"El Idioma" 
-            login:"El Login" 
-            signup:"Inscribirse" 
-            submit:"Presentar" 
-            forgotPassword:"Olvidar la Contraseña" 
+            username: "El Nombre de Usario", 
+            password: "La Contraseña", 
+            languages: "El Idioma", 
+            login: "El Login", 
+            signup: "Inscribirse", 
+            submit: "Presentar", 
+            forgotPassword: "¿Has olvidado tu contraseña?"
         },
         posts: {
-            title:"Título" 
+            title: "Título",
+            comment: "Comentario",
+            comments: "Comentarios"
         }
     },
-    ukr:{
+    por:{
         navbar: {
-            docs: 
-            contact: 
-            donations: 
-            profile: 
+            docs: "Documentação",
+            contact: "Contato",
+            donations: "Doações",
+            profile: "Perfil", 
          },
-        
          profile: {
-            aboutMe: 
-            journal:
+            aboutMe: "Sobre mim",
+            journal: "Diária"
          },
         credentials: {
-            username: 
-            password: 
-            languages: 
-            login: 
-            signup: 
-            submit: 
-            forgotPassword:
+            username: "Nome do usuário",
+            password: "Senha",
+            languages: "Línguas",
+            login: "Conecte-se",
+            signup: "Inscrever-se",
+            submit: "Enviar",
+            forgotPassword: "Esqueceu sua senha?"
         },
         posts: {
-            title: 
+            title: "Título",
+            comment: "Comente",
+            comments: "Comentários",
         }
     },
      rum: {
         navbar: {
-            docs: 
-            contact: 
-            donations: 
-            profile: 
+            docs: "Documentatie",
+            contact: "A la legatura", 
+            donations: "Doar",
+            profile: "Profil"
         },
                 
         profile: {
-                aboutMe: 
-                journal: 
-         },
-                
+                aboutMe: "Despre Mine",
+                journal: "Jurnal"
+         },       
         credentials: {
-            username: 
-            password: 
-            languages: 
-            login: 
-            signup:"" 
-            submit:""
-            forgotPassword:"" 
+            username: "Nume de utilizator",
+            password: "Parola",
+            languages: "Limbi",
+            login: "Authentificare",
+            signup: "Abonare", 
+            submit: "Trimite",
+            forgotPassword: "Aţi uitat parola?"
         },
         posts:{
-            title:  
+            title: "Titlu",
+            comment: "Cometariu",
+            comments: "Comentarii"
+        }
     },
     fr:{
         navbar: {
-            docs: "",
-            contact: "",
-            donations: "",
-            profile: "Pr"
-    },
+            docs: "Documentation",
+            contact: "Contactez",
+            donations: "Fair un don",
+            profile: "Profil"
+        },
         profile: {
-            aboutMe: "About me:",
+            aboutMe: "À Propros de Moi",
             journal: "Journal"
         },
         credentials: {
-            username: "Username",
-            password: "Password",
-            languages: "Languages",
-            login: "Log In",
-            signup: "Sign Up",
-            submit: "Submit",
-            forgotPassword: "Forgot Password?"
+            username: "Nom d'utilisateur",
+            password: "Le Mot de passe",
+            languages: "Langues",
+            login: "Connexion",
+            signup: "S'inscrire",
+            submit: "Nous fair parvenir",
+            forgotPassword: "Mot de passe oublié?"
         },
         posts: {
-            title: 'title'
-
-       
+            title: "Titre",
+            comment: "Commenter",
+            comments: "Commentaires"
         }
-    });
+    },    
+    ger:{
+        navbar: {
+            docs: "Dokumentation",
+            contact: "Kontact",
+            donations: "Spenden",
+            profile: "Profil"
+        },
+        profile: {
+            aboutMe: "Über mich",
+            journal: "Tagebuch"
+        },
+        credentials: {
+            username: "Nutzername",
+            password: "Passwort",
+            languages: "Sprachen",
+            login: "Anmeldung",
+            signup: "Anmeldung",
+            submit: "Einreichen",
+            forgotPassword: "Passwort vergessen?"
+        },
+        posts: {
+            title: "Titel",
+            comment: "Kommentar",
+            comments: "Bermerkungen"
+        }
+    },   
+    ukr: {
+        navbar: {
+            docs: "документація",
+            contact: "контакт",
+            donations: "пожертвувати",
+            profile: "профіль"
+        },
+        profile: {
+            aboutMe: "про мене:",
+            journal: "журнал"
+        },
+        credentials: {
+            username: "ім'я користувача",
+            password: "пароль",
+            languages: "мови",
+            login: "увійти",
+            signup: "зареєструватися",
+            submit: "відправити",
+            forgotPassword: "Забули пароль?"
+        },
+        posts: {
+            title: "титул",
+            comment: "коментар", 
+            comments: "коментарі"
+        }
+    );
