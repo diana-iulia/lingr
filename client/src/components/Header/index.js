@@ -59,6 +59,7 @@ const Header = () => {
             <>
               <Link className="login-btn btn btn-lg m-2" to="/login">
                 {/* {translations.navbar.docs} */}
+                {/* TODO: Fix this to show the correct translated language */}
                 Login
               </Link>
               <Link className="signup-btn btn btn-lg m-2" to="/signup">
