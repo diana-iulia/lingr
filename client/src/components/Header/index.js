@@ -40,10 +40,8 @@ const Header = () => {
     
 
     <header className="text-light mb-4 py-3 flex-row align-center">
-      {/* <div className="container flex-row justify-space-between-lg justify-center align-center"> */}
 
-    <h1>Lingr</h1>
-
+      <h1>Lingr</h1>
 
 
     <div className="ml-auto p-2">
@@ -59,9 +57,9 @@ const Header = () => {
             </>
           ) : (
             <>
-              <Link className="login-btn btn btn-lg m-2" to="/login">
+              {/* <Link className="login-btn btn btn-lg m-2" to="/login">
                 {translations.navbar.docs}
-              </Link>
+              </Link> */}
               <Link className="signup-btn btn btn-lg m-2" to="/signup">
                 Signup
               </Link>
@@ -69,7 +67,7 @@ const Header = () => {
           )}
         </div>
 
-    <Box sx={{ width: '100%' }}>
+    <Box sx={{ width: '100%', bgcolor: "#3A0CA3" }}>
       <Tabs variant="fullWidth" TabIndicatorProps={{style: {background:'#FFB703'}}} value={value} onChange={handleChange} aria-label="nav tabs example">
         <Tab component={Link} label={<span style={{ fontSize: '20px', color: '#FFB703' }}>Home</span>} to="/" />
         
@@ -85,9 +83,6 @@ const Header = () => {
 
 
 
-
-
-      {/* </div> */}
     </header>
   );
 };
