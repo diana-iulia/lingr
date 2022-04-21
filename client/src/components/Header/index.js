@@ -57,9 +57,10 @@ const Header = () => {
             </>
           ) : (
             <>
-              {/* <Link className="login-btn btn btn-lg m-2" to="/login">
-                {translations.navbar.docs}
-              </Link> */}
+              <Link className="login-btn btn btn-lg m-2" to="/login">
+                {/* {translations.navbar.docs} */}
+                Login
+              </Link>
               <Link className="signup-btn btn btn-lg m-2" to="/signup">
                 Signup
               </Link>
