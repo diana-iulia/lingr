@@ -51,7 +51,7 @@ const Header = () => {
                 {Auth.getProfile().data.username}'s profile
               </Link> */}
 
-              <button className="btn btn-lg btn-light m-2" onClick={logout}>
+              <button className="logout-btn btn btn-lg m-2" onClick={logout}>
                 Logout
               </button>
             </>
@@ -71,11 +71,11 @@ const Header = () => {
 
     <Box sx={{ padding: '0px',width: '100%', bgcolor: "#3A0CA3" }}>
       <Tabs variant="fullWidth" TabIndicatorProps={{style: { marginBottom: "0px", background:'#FFB703'}}} value={value} onChange={handleChange} aria-label="nav tabs example">
-        <Tab component={Link} label={<span style={{ fontSize: '20px', color: '#FFB703' }}>Home</span>} to="/" />
+        <Tab component={Link} label={<span style={{ fontSize: '20px', color: '#EEEEEE' }}>Home</span>} to="/" />
         
         {/* <Tab component={Link} label={`${Auth.getProfile().data.username}'s Page`} to="/me" /> */}
-        <Tab component={Link} label={<span style={{ fontSize: '20px', color: '#FFB703' }}>My Page</span>} to="/me" />
-        <Tab component={Link} label={<span style={{ fontSize: '20px', color: '#FFB703' }}>Make a Post</span>} to="/post" />
+        <Tab component={Link} label={<span style={{ fontSize: '20px', color: '#EEEEEE' }}>My Page</span>} to="/me" />
+        <Tab component={Link} label={<span style={{ fontSize: '20px', color: '#EEEEEE' }}>Make a Post</span>} to="/post" />
         {/* <Tab component={Link} label="Login" to="/login" /> */}
       </Tabs>
     </Box>
