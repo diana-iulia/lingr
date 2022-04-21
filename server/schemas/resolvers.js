@@ -7,6 +7,10 @@ const resolvers = {
     users: async () => {
       return User.find();
     },
+    posts: async (parent, { username }) => {
+      const params = username ? { username } : {};
+      return Post.find(params).sort({ createdAt: -1 });
+    },
     user: async (parent, { username }) => {
       return User.findOne({ username });
     },
