@@ -18,7 +18,13 @@ const userSchema = new Schema({
     type: String,
     required: true,
     minlength: 5,
-  }
+  },
+  posts: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: 'Post',
+    },
+  ],
 });
 
 userSchema.pre('save', async function (next) {
