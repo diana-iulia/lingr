@@ -50,7 +50,7 @@ const typeDefs = gql`
         postText: String!
         # TODO: should it be postAuthor or username?
         
-    ) : Auth
+    ) : Post
   }
 `;
 
