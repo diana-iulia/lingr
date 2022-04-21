@@ -75,7 +75,7 @@ const Header = () => {
         
         {/* <Tab component={Link} label={`${Auth.getProfile().data.username}'s Page`} to="/me" /> */}
         <Tab component={Link} label={<span style={{ fontSize: '20px', color: '#FFB703' }}>My Page</span>} to="/me" />
-        <Tab component={Link} label={<span style={{ fontSize: '20px', color: '#FFB703' }}>Make a Post</span>} to="/login" />
+        <Tab component={Link} label={<span style={{ fontSize: '20px', color: '#FFB703' }}>Make a Post</span>} to="/post" />
         {/* <Tab component={Link} label="Login" to="/login" /> */}
       </Tabs>
     </Box>
