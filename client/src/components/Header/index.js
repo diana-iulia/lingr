@@ -39,7 +39,7 @@ const Header = () => {
 
     
 
-    <header className="text-light mb-4 py-3 flex-row align-center">
+    <header className="text-light mb-4 flex-row align-center">
 
       <h1>Lingr</h1>
 
@@ -69,8 +69,8 @@ const Header = () => {
           )}
         </div>
 
-    <Box sx={{ width: '100%', bgcolor: "#3A0CA3" }}>
-      <Tabs variant="fullWidth" TabIndicatorProps={{style: {background:'#FFB703'}}} value={value} onChange={handleChange} aria-label="nav tabs example">
+    <Box sx={{ padding: '0px',width: '100%', bgcolor: "#3A0CA3" }}>
+      <Tabs variant="fullWidth" TabIndicatorProps={{style: { marginBottom: "0px", background:'#FFB703'}}} value={value} onChange={handleChange} aria-label="nav tabs example">
         <Tab component={Link} label={<span style={{ fontSize: '20px', color: '#FFB703' }}>Home</span>} to="/" />
         
         {/* <Tab component={Link} label={`${Auth.getProfile().data.username}'s Page`} to="/me" /> */}
