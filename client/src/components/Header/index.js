@@ -70,7 +70,7 @@ const Header = () => {
         </div>
 
     <Box sx={{ padding: '0px',width: '100%', bgcolor: "#3A0CA3" }}>
-      <Tabs variant="fullWidth" TabIndicatorProps={{style: { marginBottom: "0px", background:'#FFB703'}}} value={value} onChange={handleChange} aria-label="nav tabs example">
+      <Tabs variant="fullWidth" TabIndicatorProps={{style: {height: '6px', background:'#FFB703'}}} value={value} onChange={handleChange} aria-label="nav tabs example">
         <Tab component={Link} label={<span style={{ fontSize: '20px', color: '#EEEEEE' }}>Home</span>} to="/" />
         
         {/* <Tab component={Link} label={`${Auth.getProfile().data.username}'s Page`} to="/me" /> */}
