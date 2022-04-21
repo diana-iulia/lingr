@@ -19,3 +19,29 @@ export const QUERY_ME = gql`
     }
   }
 `;
+export const QUERY_POSTS = gql`
+  query getPosts {
+    posts {
+      _id
+      thoughtText
+      thoughtAuthor
+      createdAt
+    }
+  }
+`;
+export const QUERY_SINGLE_POSTS  = gql`
+  query getSinglePosts($postsId: ID!) {
+    posts(postsId: $postsId) {
+      _id
+      postsText
+      postsAuthor
+      createdAt
+      comments {
+        _id
+        commentText
+        commentAuthor
+        createdAt
+      }
+    }
+  }
+`;
