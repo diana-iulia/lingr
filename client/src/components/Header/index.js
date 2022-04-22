@@ -39,11 +39,9 @@ const Header = () => {
 
     
 
-    <header className="text-light mb-4 py-3 flex-row align-center">
-      {/* <div className="container flex-row justify-space-between-lg justify-center align-center"> */}
+    <header className="text-light mb-4 flex-row align-center">
 
-    <h1>Lingr</h1>
-
+      <h1>Lingr</h1>
 
 
     <div className="ml-auto p-2">
@@ -53,14 +51,16 @@ const Header = () => {
                 {Auth.getProfile().data.username}'s profile
               </Link> */}
 
-              <button className="btn btn-lg btn-light m-2" onClick={logout}>
+              <button className="logout-btn btn btn-lg m-2" onClick={logout}>
                 Logout
               </button>
             </>
           ) : (
             <>
               <Link className="login-btn btn btn-lg m-2" to="/login">
-                {translations.navbar.docs}
+                {/* {translations.navbar.docs} */}
+                {/* TODO: Fix above to show the correct translated language */}
+                Login
               </Link>
               <Link className="signup-btn btn btn-lg m-2" to="/signup">
                 Signup
@@ -69,13 +69,13 @@ const Header = () => {
           )}
         </div>
 
-    <Box sx={{ width: '100%' }}>
-      <Tabs variant="fullWidth" TabIndicatorProps={{style: {background:'#FFB703'}}} value={value} onChange={handleChange} aria-label="nav tabs example">
-        <Tab component={Link} label={<span style={{ fontSize: '20px', color: '#FFB703' }}>Home</span>} to="/" />
+    <Box sx={{ padding: '0px',width: '100%', bgcolor: "#3A0CA3" }}>
+      <Tabs variant="fullWidth" TabIndicatorProps={{style: {height: '6px', background:'#FFB703'}}} value={value} onChange={handleChange} aria-label="nav tabs example">
+        <Tab component={Link} label={<span style={{ fontSize: '20px', color: '#EEEEEE' }}>Home</span>} to="/" />
         
         {/* <Tab component={Link} label={`${Auth.getProfile().data.username}'s Page`} to="/me" /> */}
-        <Tab component={Link} label={<span style={{ fontSize: '20px', color: '#FFB703' }}>My Page</span>} to="/me" />
-        <Tab component={Link} label={<span style={{ fontSize: '20px', color: '#FFB703' }}>Make a Post</span>} to="/post" />
+        <Tab component={Link} label={<span style={{ fontSize: '20px', color: '#EEEEEE' }}>My Page</span>} to="/me" />
+        <Tab component={Link} label={<span style={{ fontSize: '20px', color: '#EEEEEE' }}>Make a Post</span>} to="/post" />
         {/* <Tab component={Link} label="Login" to="/login" /> */}
       </Tabs>
     </Box>
@@ -85,9 +85,6 @@ const Header = () => {
 
 
 
-
-
-      {/* </div> */}
     </header>
   );
 };

@@ -37,6 +37,18 @@ header {
 }
 
 
+.logout-btn {
+    background-color: #7209B7;
+    color: #e6e6e6;
+    text-decoration: none;
+}
+
+.logout-btn:hover {
+    background-color: #4c067a;
+    color: #e6e6e6;
+    text-decoration: none;
+}
+
 .nav-item {
     width: 100%;
 }

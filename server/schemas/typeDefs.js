@@ -33,6 +33,7 @@ const typeDefs = gql`
     users: [User]
     user(username: String!): User
     me: User
+    posts(username: String): [Post]
   }
 
   type Mutation {
@@ -48,8 +49,6 @@ const typeDefs = gql`
     addPost(
         username: String!
         postText: String!
-        # TODO: should it be postAuthor or username?
-        
     ) : Post
   }
 `;
