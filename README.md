@@ -1,8 +1,8 @@
 # LINGR: a Language Learning Social Media
-[OPEN APP](!!)
+[OPEN APP](https://ling-r.herokuapp.com/)
 
 ## About:
-Have you ever found yourself squandering hours or days or years away on social media? Is your social media screen time 8+ hours daily? Lingr is here to help you and your friends can feel good about that number possibly being in the double digits because you’re all practicing your target language(s) ✨together✨!! 
+Have you ever found yourself squandering your life on social media? Is your screen time slowly creeping up, almost mocking you? Lingr is here to help you and your friends can feel good about that number possibly being in the double digits because you’re all practicing your target language(s) ✨together✨!! 
 
 Does duolingo not meet your sky high standards, especially for languages that are not latin-derived? Does that little twisted bird manipulating your feelings make you want to delete the whole app?? Lingr is the solution! Connect with folks from around the world with a peer commentable blog, and (post MVP) view and contribute to the vault of community resources, post voice clips and videos, learn handwriting and cursive, and even stroke order for the chinese, japanese, and korean languages. Perhaps we can also be used as a classroom resource?? idk but the point is that it’s free for everyone always. ad free, money free, uhhh gluten free… free!!! 
 
@@ -16,7 +16,12 @@ made with <3 by [Diana](https://github.com/dianaiuliacalin/lingr), [Erica](https
 <br>
 [React Localization](https://www.npmjs.com/package/react-localization)
 <br>
-CURRENT APP LANGUAGES: en-us, it, ro, es, de
+[Instructor react app boilerplate](https://github.com/ac524/work-timeline/tree/boilerplate)
+<br>
+[Deploy with Heroku and MongoDB Atlas](https://coding-boot-camp.github.io/full-stack/mongodb/deploy-with-heroku-and-mongodb-atlas)
+
+
+CURRENT APP LANGUAGES: de, en-us, es, fr, it, por, ro...
 <br>
 WE STILL NEED HELP WITH THESE LANGUAGES: af, sq, am, ar, hy, be, bg, my... lots... 
 <br>
@@ -39,6 +44,7 @@ let strings = new LocalizedStrings({
 
           username: "",
           password: "",
+          language: "",
           languages: "",
           login: "",
           signup: "",
@@ -54,25 +60,8 @@ let strings = new LocalizedStrings({
 );
 ```
 
-## Pseudocode: 
-[x] Copy [boilerplate](https://github.com/ac524/work-timeline/tree/boilerplate)
-
-[x] npm install MUI in directory (directions below)
-
-[ ] add components to html
-    1. navbar
-    2. profile bar
-    3. journal (container)
-    4. journal (posts + comments)
-    5. login
-    6. sign up
-    7. 
-    
-[ ] 
-
 ---
 ### notes:
-#### features 
 USER'S FIRST TIME ON PAGE:
 * read about lingr
 * sign up:
@@ -83,7 +72,7 @@ AFTER LOGIN/SIGNUP:
 
 IN PROFILE: 
 * default- journal tab
-* can also navigate to "buddies tab
+* can also navigate to buddies tab (POST MVP)
 * EDIT PROFILE/SETTINGS (languages)
 * 
 
