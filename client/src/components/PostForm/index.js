@@ -8,42 +8,49 @@ import { QUERY_POSTS, QUERY_ME } from '../../utils/queries';
 import Auth from '../../utils/auth';
 
 const PostsForm = () => {
-  const [postsText, setPostsText] = useState('');
+  const [postText, setPostsText] = useState('');
 
   const [characterCount, setCharacterCount] = useState(0);
 
   const [addPosts, { error }] = useMutation(ADD_POST, {
-    update(cache, { data: { addPosts } }) {
-      try {
-        const { posts } = cache.readQuery({ query: QUERY_POSTS });
 
-        cache.writeQuery({
-          query: QUERY_POSTS,
-          data: { posts: [addPosts, ...posts] },
-        });
-      } catch (e) {
-        console.error(e);
-      }
+
+    // refetchQueries: [QUERY_ME]
+
+
+    // update(cache, { data: { addPosts } }) {
+    //   try {
+    //     const { posts } = cache.readQuery({ query: QUERY_POSTS });
+
+    //     cache.writeQuery({
+    //       query: QUERY_POSTS,
+    //       data: { posts: [addPosts, ...posts] },
+    //     });
+    //   } catch (e) {
+    //     console.error(e);
+    //   }
 
       // update me object's cache
-      const { me } = cache.readQuery({ query: QUERY_ME });
-      cache.writeQuery({
-        query: QUERY_ME,
-        data: { me: { ...me, posts: [...me.posts, addPosts] } },
-      });
-    },
+      // const { me } = cache.readQuery({ query: QUERY_ME });
+      // cache.writeQuery({
+      //   query: QUERY_ME,
+      //   data: { me: { ...me, posts: [...me.posts, addPosts] } },
+      // });
+    // },
   });
 
   const handleFormSubmit = async (event) => {
     event.preventDefault();
 
+    const postAuthor = (Auth.getProfile().data.username)
     try {
       const { data } = await addPosts({
         variables: {
-          postsText,
-          postsAuthor: Auth.getProfile().data.username,
+          postText,
+          // postAuthor: Auth.getProfile().data.username,
         },
       });
+
 
       setPostsText('');
     } catch (err) {
@@ -81,7 +88,7 @@ const PostsForm = () => {
               <textarea
                 name="postsText"
                 placeholder="Here's a new post..."
-                value={postsText}
+                value={postText}
                 className="form-input w-100"
                 style={{ lineHeight: '1.5', resize: 'vertical' }}
                 onChange={handleChange}

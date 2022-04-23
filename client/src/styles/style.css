@@ -4,7 +4,9 @@ body {
 
 header h1 {
     font-size: 80px;
-    padding-left: 20px;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     color: #FFB703;
 }
 
@@ -59,13 +61,11 @@ header {
     header h1 {
         /* font-size: 40px; */
         text-align: center;
-        padding-left: 0px;
+        padding-left: 10px;
         color: #FFB703;
+        font-size: 60px;
     }
 
-    .login-btn {
-        font-size: small;
-    }
 
 
 }

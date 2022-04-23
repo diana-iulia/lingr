@@ -52,14 +52,14 @@ const resolvers = {
           postAuthor: context.user.username,
         });
 
-        console.log(post);
+        // console.log(post);
 
         await User.findOneAndUpdate(
           { _id: context.user._id },
           { $addToSet: { posts: post._id } }
         );
 
-        console.log(context.user)
+        // console.log(context.user)
 
         return post;
       }
