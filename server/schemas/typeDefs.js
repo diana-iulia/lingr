@@ -47,7 +47,6 @@ const typeDefs = gql`
         password: String!)
         : Auth
     addPost(
-        username: String!
         postText: String!
     ) : Post
   }
