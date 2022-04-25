@@ -38,7 +38,7 @@ const Header = () => {
           <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
             <TabList onChange={handleChange} aria-label="lab API tabs example">
               <Tab label="Home" value="1" />
-              <Tab label="My Page" value="2" />
+              <Tab  label="My Page" value="2" />
               <Tab label="Make a Post" value="3" />
             </TabList>
           </Box>

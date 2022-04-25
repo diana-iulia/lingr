@@ -23,6 +23,7 @@ const CommentForm = ({ postId }) => {
           commentAuthor: Auth.getProfile().data.username,
         },
       });
+      console.log(data)
 
       setCommentText('');
     } catch (err) {
@@ -41,7 +42,7 @@ const CommentForm = ({ postId }) => {
 
   return (
     <div>
-      <h4>What are your thoughts on this thought?</h4>
+      <h4>What are your thoughts on this post?</h4>
 
       {Auth.loggedIn() ? (
         <>
@@ -77,7 +78,7 @@ const CommentForm = ({ postId }) => {
         </>
       ) : (
         <p>
-          You need to be logged in to share your thoughts. Please{' '}
+          You need to be logged in to share your posts. Please{' '}
           <Link to="/login">login</Link> or <Link to="/signup">signup.</Link>
         </p>
       )}

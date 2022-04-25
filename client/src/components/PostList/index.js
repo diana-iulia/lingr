@@ -21,9 +21,9 @@ const PostList = ({
               {showUsername ? (
                 <Link
                   className="text-light"
-                  to={`/profiles/${posts.postAuthor}`}
+                  to={`/profiles/${posts.postsAuthor}`}
                 >
-                  {posts.postAuthor} <br />
+                  {posts.postsAuthor} <br />
                   <span style={{ fontSize: '1rem' }}>
                     had this post on {posts.createdAt}
                   </span>
@@ -37,13 +37,13 @@ const PostList = ({
               )}
             </h4>
             <div className="card-body bg-light p-2">
-              <p>{posts.postText}</p>
+              <p>{posts.postsText}</p>
             </div>
             <Link
               className="btn btn-primary btn-block btn-squared"
-              to={`/post/${posts._id}`}
+              to={`/posts/${posts._id}`}
             >
-              Join the discussion on this thought.
+              Join the discussion on this post.
             </Link>
           </div>
         ))}

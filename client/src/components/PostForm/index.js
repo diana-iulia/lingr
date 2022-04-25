@@ -8,61 +8,61 @@ import { QUERY_POSTS, QUERY_ME } from '../../utils/queries';
 import Auth from '../../utils/auth';
 
 const PostsForm = () => {
-  const [postText, setPostsText] = useState('');
+  const [postText, setPostText] = useState('');
 
   const [characterCount, setCharacterCount] = useState(0);
 
-  const [addPosts, { error }] = useMutation(ADD_POST, {
+  const [addPost, { error }] = useMutation(ADD_POST, {
 
 
     // refetchQueries: [QUERY_ME]
 
 
-    // update(cache, { data: { addPosts } }) {
-    //   try {
-    //     const { posts } = cache.readQuery({ query: QUERY_POSTS });
+     update(cache, { data: { addPosts } }) {
+       try {
+         const { posts } = cache.readQuery({ query: QUERY_POSTS });
 
-    //     cache.writeQuery({
-    //       query: QUERY_POSTS,
-    //       data: { posts: [addPosts, ...posts] },
-    //     });
-    //   } catch (e) {
-    //     console.error(e);
-    //   }
+         cache.writeQuery({
+          query: QUERY_POSTS,
+           data: { posts: [addPosts, ...posts] },
+         });
+       } catch (e) {
+         console.error(e);
+       }
 
       // update me object's cache
-      // const { me } = cache.readQuery({ query: QUERY_ME });
-      // cache.writeQuery({
-      //   query: QUERY_ME,
-      //   data: { me: { ...me, posts: [...me.posts, addPosts] } },
-      // });
-    // },
+       const { me } = cache.readQuery({ query: QUERY_ME });
+       cache.writeQuery({
+         query: QUERY_ME,
+         data: { me: { ...me, posts: [...me.posts, addPosts] } },
+       });
+     },
   });
 
   const handleFormSubmit = async (event) => {
     event.preventDefault();
 
-    const postAuthor = (Auth.getProfile().data.username)
-    try {
-      const { data } = await addPosts({
+   try {
+      const { data } = await addPost({
         variables: {
           postText,
-          // postAuthor: Auth.getProfile().data.username,
+          postAuthor: Auth.getProfile().data.username,
         },
-      });
+     });
+     console.log(data, )
 
 
-      setPostsText('');
+      setPostText('');
     } catch (err) {
       console.error(err);
-    }
-  };
+   }
+};
 
   const handleChange = (event) => {
     const { name, value } = event.target;
 
     if (name === 'postsText' && value.length <= 280) {
-      setPostsText(value);
+      setPostText(value);
       setCharacterCount(value.length);
     }
   };
