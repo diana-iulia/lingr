@@ -28,12 +28,13 @@ const typeDefs = gql`
     token: ID!
     user: User
   }
-
+ 
   type Query {
     users: [User]
     user(username: String!): User
     me: User
     posts(username: String): [Post]
+    getMyPosts(username: String!): User
   }
 
   type Mutation {
