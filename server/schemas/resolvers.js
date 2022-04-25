@@ -20,6 +20,14 @@ const resolvers = {
       }
       throw new AuthenticationError('You need to be logged in!');
     },
+    getMyPosts: async (parent, {username}, context) => {
+      console.log("Getting all my posts ", username);
+      // if (context.user) {
+        // return User.findOne({ username })
+        return User.findOne({ username }).populate('posts');
+      // }
+      // throw new AuthenticationError('You need to be logged in!');
+    },
   },
 
   Mutation: {
