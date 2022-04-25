@@ -13,8 +13,8 @@ import Signup from './pages/Signup';
 import Login from './pages/Login';
 import Profile from './pages/Profile';
 
-import PostForm from './components/PostForm/index'
-
+//import PostForm from './components/PostForm/index';
+import SinglePost from './pages/SinglePost';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
@@ -71,8 +71,8 @@ function App() {
                 element={<Profile />}
               />
               <Route 
-                path="/post"
-                element={<PostForm />}
+                path="posts/:postID"
+                element={<SinglePost />}
               />
             </Routes>
           </div>
