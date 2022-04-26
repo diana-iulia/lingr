@@ -3,8 +3,35 @@
 import LocalizedStrings from 'react-localization';
 
 export const translations = new LocalizedStrings({
+  
+    de: {
+        introParagraph: "",
+
+        documentation: "Dokumentation",
+        contact: "Kontact",
+        donations: "Spenden",
+        profile: "Profil",
+
+        aboutMe: "Über mich",
+        journal: "Tagebuch",
+
+        username: "Nutzername",
+        password: "Passwort",
+        language: "sprache",
+        languages: "Sprachen",
+        login: "Anmeldung",
+        logout: "Abmelden",
+        signup: "Anmeldung",
+        submit: "Einreichen",
+        forgotPassword: "Passwort vergessen?",
+
+        title: "Titel",
+        comment: "Kommentar",
+        comments: "Bermerkungen",
+    },   
+
     en:{
-        introParagraph: "Hi buddy! We're so happy to see you here. Our mission is to help foster communication and understanding across the world by offering connection and community. Haha, gotcha!! Well, okay, it IS supposed to be all of that and more. However, it is our duty to let everyone know the true objective of this application: to lure you in and have you practicing your target language(s) for hours a day >:)  no more pushing your screen time into the double digits with facebook or instagram, claim your 10+ hours here instead, along with fluency and community service!",
+        introParagraph: "Hi buddy! We're so happy to see you here. Our mission is to help foster communication and understanding across the world by offering connection and community. Haha, gotcha!! Well, okay, it IS supposed to be all of that and more. However, it is our duty to let everyone know the true objective of this application: to lure you in and have you practicing your target language(s) for hours a day >:)  no more pushing your screen time into the double digits with facebook or instagram, claim your screen time hours here instead, along with fluency and community service!",
     
         documentation: "documentation",
         contact: "contact",
@@ -133,32 +160,31 @@ export const translations = new LocalizedStrings({
         comments: "comentários",
     },
 
-    de: {
-        introParagraph: "",
+    ro:{
+        introParagraph: "Bine ați venit, prieteni! Înca nu am scris această translație și scriu un pic aici sa apară ceva pe pagina pentru a demonstra functionalitatea",
 
-        documentation: "Dokumentation",
-        contact: "Kontact",
-        donations: "Spenden",
-        profile: "Profil",
+        documentation: "documentație",
+        contact: "contact",
+        donations: "donează", 
+        profile: "profil",
 
-        aboutMe: "Über mich",
-        journal: "Tagebuch",
-
-        username: "Nutzername",
-        password: "Passwort",
-        language: "sprache",
-        languages: "Sprachen",
-        login: "Anmeldung",
-        logout: "Abmelden",
-        signup: "Anmeldung",
-        submit: "Einreichen",
-        forgotPassword: "Passwort vergessen?",
-
-        title: "Titel",
-        comment: "Kommentar",
-        comments: "Bermerkungen",
-    },   
-
+        aboutMe: "despre mine:",
+        journal: "jurnal",
+        
+        username: "nume de utilizator",
+        password: "parola",
+        language: "limbă",
+        languages: "limbi",
+        login: "autentificare",
+        signup: "înscrie-te",
+        submit: "trimite",
+        forgotPassword: "mi-am uitat parola",
+        
+        title: "titlu",
+        comment: "comentariu",
+        comments: "comentarii",
+        
+    }
     // ukr: {
     //     navbar: {
     //         documentation: "документація",
