@@ -6,6 +6,8 @@ import { ADD_USER } from '../utils/mutations';
 
 import Auth from '../utils/auth';
 
+import { translations } from '../lib/localizedStrings';
+
 const Signup = () => {
   const [formState, setFormState] = useState({
     username: '',
@@ -55,7 +57,7 @@ const handleFormSubmit = async (event) => {
     <main className="flex-row justify-center mb-4">
       <div className="col-12 col-lg-10">
         <div className="card">
-          <h4 className="card-header bg-dark text-light p-2">Sign Up</h4>
+          <h4 className="card-header bg-dark text-light p-2">{translations.signup}</h4>
           <div className="card-body">
             {data ? (
               <p>
@@ -93,7 +95,7 @@ const handleFormSubmit = async (event) => {
                   style={{ cursor: 'pointer' }}
                   type="submit"
                 >
-                  Submit
+                  {translations.submit}
                 </button>
               </form>
             )}

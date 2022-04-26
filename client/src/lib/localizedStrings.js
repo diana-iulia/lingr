@@ -4,6 +4,8 @@ import LocalizedStrings from 'react-localization';
 
 export const translations = new LocalizedStrings({
     en:{
+        introParagraph: "Hi buddy! We're so happy to see you here. Our mission is to help foster communication and understanding across the world by offering connection and community. Haha, gotcha!! Well, okay, it IS supposed to be all of that and more. However, it is our duty to let everyone know the true objective of this application: to lure you in and have you practicing your target language(s) for hours a day >:)  no more pushing your screen time into the double digits with facebook or instagram, claim your 10+ hours here instead, along with fluency and community service!",
+    
         documentation: "documentation",
         contact: "contact",
         donations: "donate",
@@ -16,8 +18,9 @@ export const translations = new LocalizedStrings({
         password: "password",
         language: "language",
         languages: "languages",
-        login: "log In",
-        signup: "sign Up",
+        login: "login",
+        logout: "log out",
+        signup: "sign up",
         submit: "submit",
         forgotPassword: "forgot password?",
 
@@ -27,6 +30,8 @@ export const translations = new LocalizedStrings({
     },
 
     es:{
+        introParagraph: "",
+
         documentation: "documentación",
         contact: "contactar",
         donations: "donar",
@@ -40,6 +45,7 @@ export const translations = new LocalizedStrings({
         language: "lengua",
         languages: "lenguas",
         login: "login",
+        logout: "cerrar sesión",
         signup: "inscribirse",
         submit: "enviar",
         forgotPassword: "olvidar la contraseña",
@@ -50,6 +56,8 @@ export const translations = new LocalizedStrings({
     },
 
     fr:{
+        introParagraph: "",
+
         documentation: "documentation",
         contact: "contactez",
         donations: "fair un don",
@@ -62,7 +70,8 @@ export const translations = new LocalizedStrings({
         password: "le mot de passe",
         language: "langue",
         languages: "langues",
-        login: "connexion",
+        login: "entrer",
+        logout: "se deconnecter",
         signup: "s'inscrire",
         submit: "envoyer",
         forgotPassword: "oublié votre mot de passé?",
@@ -73,6 +82,8 @@ export const translations = new LocalizedStrings({
     },
 
     it: {
+        introParagraph: "",
+
         documentation: "documentazione",
         contact: "contattare",
         donations: "donare",
@@ -86,6 +97,7 @@ export const translations = new LocalizedStrings({
         language: "lingua",
         languages: "lingue",
         login: "accesso",
+        logout: "disconnettersi",
         signup: "iscriversi",
         submit: "inviare il modulo",
         forgotPassword: "ha dimenticato la parola?",
@@ -96,6 +108,8 @@ export const translations = new LocalizedStrings({
     },
 
     por:{
+        introParagraph: "",
+
         documentation: "documentação",
         contact: "contato",
         donations: "doações",
@@ -109,6 +123,7 @@ export const translations = new LocalizedStrings({
         language: "língua",
         languages: "línguas",
         login: "conecte-se",
+        logout: "sair",
         signup: "inscrever-se",
         submit: "enviar",
         forgotPassword: "esqueceu sua senha?",
@@ -119,6 +134,8 @@ export const translations = new LocalizedStrings({
     },
 
     de: {
+        introParagraph: "",
+
         documentation: "Dokumentation",
         contact: "Kontact",
         donations: "Spenden",
@@ -132,6 +149,7 @@ export const translations = new LocalizedStrings({
         language: "sprache",
         languages: "Sprachen",
         login: "Anmeldung",
+        logout: "Abmelden",
         signup: "Anmeldung",
         submit: "Einreichen",
         forgotPassword: "Passwort vergessen?",

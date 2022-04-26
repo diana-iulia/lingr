@@ -8,23 +8,17 @@ import Tab from '@mui/material/Tab';
 import Tabs from '@mui/material/Tabs';
 import '../../styles/style.css'
 
-
-
-
-
 import { translations } from '../../lib/localizedStrings';
 
-
-translations.setLanguage('it');
+// the following line is used to force a particular language
+translations.setLanguage('en');
 
 const Header = () => {
-
 
   const logout = (event) => {
     event.preventDefault();
     Auth.logout();
   };
-
 
   const [value, setValue] = React.useState(0);
 
@@ -33,15 +27,12 @@ const Header = () => {
   };
 
 
-
-  
   return (
 
-    
 
     <header className="text-light mb-4 flex-row align-center">
 
-      <h1>Lingr</h1>
+      <h1> Lingr </h1>
 
 
     <div className="ml-auto p-2">
@@ -52,18 +43,16 @@ const Header = () => {
               </Link> */}
 
               <button className="logout-btn btn btn-lg m-2" onClick={logout}>
-                Logout
+                {translations.logout}
               </button>
             </>
           ) : (
             <>
               <Link className="login-btn btn btn-lg m-2" to="/login">
-                {/* {translations.navbar.docs} */}
-                {/* TODO: Fix above to show the correct translated language */}
-                Login
+                {translations.login}
               </Link>
               <Link className="signup-btn btn btn-lg m-2" to="/signup">
-                Signup
+                {translations.signup}
               </Link>
             </>
           )}
@@ -73,16 +62,11 @@ const Header = () => {
       <Tabs variant="fullWidth" TabIndicatorProps={{style: {height: '6px', background:'#FFB703'}}} value={value} onChange={handleChange} aria-label="nav tabs example">
         {/* <Tab component={Link} label={`${Auth.getProfile().data.username}'s Page`} to="/me" /> */}
         <Tab component={Link} label={<span style={{ fontSize: '24px', color: '#EEEEEE' }}>Home</span>} to="/" />
-        <Tab component={Link} label={<span style={{ fontSize: '24px', color: '#EEEEEE' }}>My Page</span>} to="/me" />
+        <Tab component={Link} label={<span style={{ fontSize: '24px', color: '#EEEEEE' }}>{translations.journal}</span>} to="/me" />
         <Tab component={Link} label={<span style={{ fontSize: '24px', color: '#EEEEEE' }}>Make a Post</span>} to="/post" />
       </Tabs>
     </Box>
     
-
-    
-
-
-
     </header>
   );
 };
